@@ -1,0 +1,35 @@
+{
+  "name": "wedding-day-modern",
+  "version": "1.0.0",
+  "description": "Wedding's Landing Page in modern style",
+  "main": "src/pages/index.html",
+  "source": "src/pages/index.html",
+  "scripts": {
+    "clean": "rm -rf dist/* && rm -rf .parcel-cache/*",
+    "start": "parcel",
+    "build:parcel": "parcel build",
+    "build": "npm run clean && npm run build:parcel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pantella/Wedding-Day-Modern.git"
+  },
+  "keywords": [
+    "wedding",
+    "parcel",
+    "sass",
+    "gsap"
+  ],
+  "author": "Giacomo Mantegazza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pantella/Wedding-Day-Modern/issues"
+  },
+  "homepage": "https://github.com/Pantella/Wedding-Day-Modern#readme",
+  "devDependencies": {
+    "parcel": "^2.3.2"
+  },
+  "dependencies": {
+    "gsap": "^3.9.1"
+  }
+}
