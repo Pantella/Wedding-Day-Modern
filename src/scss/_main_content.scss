@@ -1,0 +1,53 @@
+@import 'variables';
+@import 'mixins';
+
+
+.main-container {
+
+    .panel {
+        height: 100vh;
+    
+        background-color: aquamarine;
+    }
+
+    .panel:nth-child(2n) {
+        background-color: burlywood;
+    }
+
+    .landing-panel {
+        @include flex-row;
+        @include flex-center;
+
+        background-image: url('./../images/vadim-paripa-medium.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        h1 {
+            @include flex-column;
+            @include flex-center;
+
+            min-width: 50vw;
+            
+
+            span {
+                color: $white;
+                font-weight: 400;
+            }
+
+            #name-left {
+                align-self:flex-start;
+            }
+            #name-center {
+                align-self:center;
+            }
+            #name-right {
+                align-self:flex-end;
+            }
+        }
+    }
+}
+
+
+

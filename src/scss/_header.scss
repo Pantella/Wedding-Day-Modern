@@ -1,0 +1,35 @@
+@import 'variables';
+@import 'mixins';
+
+.header-nav {
+    position: fixed;
+    z-index: 2;
+    background-color: transparent;
+
+    ul {
+        padding-left: 1rem;
+        padding-top: 1rem;
+
+        li {
+            display: inline-block;
+
+            a {
+                display: inline-block;
+                padding: 1rem;
+            }
+
+            a::after {
+                content: "";
+                display: block;
+                height: 4px;
+                width: 0%;
+                background-color: $white;
+                transition: all 0.5s ease-in-out;
+            }
+
+            a:hover::after {
+                width: 100%;
+            }
+        }
+    }
+}

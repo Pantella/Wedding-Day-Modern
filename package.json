@@ -2,7 +2,6 @@
   "name": "wedding-day-modern",
   "version": "1.0.0",
   "description": "Wedding's Landing Page in modern style",
-  "main": "src/pages/index.html",
   "source": "src/pages/index.html",
   "scripts": {
     "clean": "rm -rf dist/* && rm -rf .parcel-cache/*",
@@ -27,6 +26,7 @@
   },
   "homepage": "https://github.com/Pantella/Wedding-Day-Modern#readme",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.3.2",
     "parcel": "^2.3.2"
   },
   "dependencies": {
