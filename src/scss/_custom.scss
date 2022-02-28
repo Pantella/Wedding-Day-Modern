@@ -3,3 +3,20 @@
 .big-title {
     font-size: $fnt-sz-big;
 }
+
+.bottom-right-card {
+    position: absolute;
+    bottom: 15%;
+    right: 20%;
+}
+
+.top-right-leaf {
+    position: absolute;
+    top: 35%;
+    right: 15%;
+}
+
+.capital-letter {
+    color: $pink;
+    font-size: 4rem;
+}
