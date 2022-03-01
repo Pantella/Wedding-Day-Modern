@@ -10,13 +10,32 @@
     right: 20%;
 }
 
-.top-right-leaf {
+.center-right-leaf {
     position: absolute;
     top: 35%;
     right: 15%;
 }
 
+.top-right-leaf {
+    position: absolute;
+    top: 10%;
+    right: 15%;
+}
+
+.left-leaf {
+    height: 100%;
+}
+
 .capital-letter {
     color: $pink;
     font-size: 4rem;
+}
+
+.quote {
+    font-style: italic;
+}
+
+.enfasi {
+    font-size: 7rem;
+    color: $pink;
 }

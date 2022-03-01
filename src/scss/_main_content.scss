@@ -71,6 +71,56 @@
             background-image: url('./../images/card-bg.png');
         }
     }
+
+    .quote-panel {
+
+        background-color: $white!important;
+
+        article {
+
+            height: 100%;
+
+            blockquote {
+                position: absolute;
+                top:0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+
+                font-size: 4rem;
+                
+                p,cite {
+                    color: $dark-purple;
+                }
+
+                #quote-rst-line {
+                    position: absolute;
+                    top: 10%;
+                    left: 20%;
+                }
+                #quote-snd-line {
+                    position: absolute;
+                    top: 35%;
+                    right: 5%;
+                }
+                #quote-trd-line {
+                    position: absolute;
+                    top: 60%;
+                    right: 10%;
+                }
+                cite {
+                    position: absolute;
+                    bottom: 5%;
+                    right: 20%;
+
+                    font-size: 3.5rem;
+                    font-style: none;
+                }
+            }
+        }
+
+
+    }
 }
 
 
