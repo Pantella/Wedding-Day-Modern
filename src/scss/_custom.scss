@@ -4,10 +4,34 @@
     font-size: $fnt-sz-big;
 }
 
+.header-cap-letr {
+    color: $pink;
+    font-size: 2rem;
+    // font-weight: bold;
+}
+
+.bottom-right-image {
+    position: absolute;
+    bottom: 15%;
+    right: 20%;
+}
+
+.top-left-image {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
 .bottom-right-card {
     position: absolute;
     bottom: 15%;
     right: 20%;
+}
+
+.top-left-card {
+    position: absolute;
+    top: 15%;
+    left: 10%;
 }
 
 .center-right-leaf {
@@ -20,6 +44,12 @@
     position: absolute;
     top: 10%;
     right: 15%;
+}
+
+.bottom-left-leaf {
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
 }
 
 .left-leaf {
