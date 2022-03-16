@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm -rf dist/* && rm -rf .parcel-cache/*",
     "start": "parcel",
-    "build:parcel": "parcel build",
+    "build:parcel": "parcel build --public-url ./",
     "build": "npm run clean && npm run build:parcel",
     "deploy": "gh-pages -d dist"
   },
