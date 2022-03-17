@@ -1,4 +1,5 @@
 WEDDING DAY INVITATION ... AGAIN!
+---------------------------------
 
 Dopo avere sperimentato con il repository https://github.com/Pantella/Wedding-Day ho optato per una landing page più corposa e dinamica, mantenendo sempre il concetto di trasposizione web delle partecipazioni di nozze.
 
