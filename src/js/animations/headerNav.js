@@ -10,6 +10,9 @@ function changeLinkColor() {
     gsap.to(
         capLetters,
         {
+            color: '#9d7f84',
+        },
+        {
             scrollTrigger: {
                 // markers: true,
                 trigger: '#cerimonia',
