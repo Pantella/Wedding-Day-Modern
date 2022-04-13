@@ -45,6 +45,12 @@
     position: absolute;
     top: 15%;
     left: 10%;
+
+    @include media-breakpoint-down($lg) {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
 }
 
 .center-right-leaf {
@@ -63,16 +69,36 @@
     position: absolute;
     top: 10%;
     right: 15%;
+
+    @include media-breakpoint-down($lg) {
+        z-index: 100;
+        top: 0%;
+        right: 5%;
+
+        height: 30%;
+    }
 }
 
 .bottom-left-leaf {
     position: absolute;
     bottom: 10%;
     left: 15%;
+
+    @include media-breakpoint-down($lg) {
+        z-index: 100;
+        bottom: 5%;
+        left: 0%;
+    }
 }
 
 .left-leaf {
     height: 100%;
+
+    @include media-breakpoint-down($lg) {
+        height: 45%;
+        position: absolute;
+        bottom: 0%;
+    }
 }
 
 .capital-letter {
@@ -87,4 +113,8 @@
 .enfasi {
     font-size: 7rem;
     color: $pink;
+
+    @include media-breakpoint-down($lg) {
+        font-size: 4rem;
+    }
 }
