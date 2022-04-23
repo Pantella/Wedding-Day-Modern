@@ -250,8 +250,14 @@
 
                     min-height: 15vh;
 
-                    font-size: 3rem;
+                    font-size: $fnt-sz-md;
                 }
+
+                .enfasi {
+                    @include media-breakpoint-down($sm) {
+                        font-size: $fnt-sz-md-plus;
+                    }
+                } 
             }
     
             .gallery-img {

@@ -45,6 +45,10 @@
         background-color: $white;
         padding: 0.5rem;
 
+        @include media-breakpoint-up($lg) {
+            display: none;
+        }
+
         .hamburger {
             background-color: transparent;
             max-height: 3rem;
@@ -95,6 +99,21 @@
         width: 100vw;
 
         transition: all 1s;
+
+        @include media-breakpoint-up($lg) {
+            @include flex-row;
+            @include flex-center;
+
+            list-style: none;
+
+            min-height: 7vh;
+        }
+
+        li {
+            @include media-breakpoint-up($lg) {
+                min-width: 30vw;
+            }
+        }
 
         li a {
             display: inline-block;
