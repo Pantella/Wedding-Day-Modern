@@ -39,6 +39,8 @@
     z-index: 2;
     background-color: transparent;
 
+    width: 100vw;
+
     .hamburger-container {
         background-color: $white;
         padding: 0.5rem;
@@ -85,9 +87,14 @@
     
 
     ul {
-        // display: none;
+        position: absolute;
+        top:-175%;
+        z-index: -10;
+
         background-color: $white;
         width: 100vw;
+
+        transition: all 1s;
 
         li a {
             display: inline-block;
@@ -95,5 +102,9 @@
 
             text-align: center;
         }
+    }
+
+    .show-nav {
+        transform: translateY(145%);
     }
 }

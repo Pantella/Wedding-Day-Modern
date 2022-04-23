@@ -25,4 +25,13 @@ function changeLinkColor() {
     );
 }
 
-export default changeLinkColor
+function toggleNavbarMobile() {
+    let navtoggler = document.querySelector("#navbar-toggler");
+    let navbarList = document.querySelector("#navbar-list");
+
+    navtoggler.addEventListener('click',()=>{
+        navbarList.classList.toggle('show-nav');
+    });
+}
+
+export {changeLinkColor,toggleNavbarMobile}
