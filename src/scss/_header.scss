@@ -1,7 +1,7 @@
 @import 'variables';
 @import 'mixins';
 
-.header-nav {
+/* .header-nav {
     position: fixed;
     z-index: 2;
     background-color: transparent;
@@ -30,6 +30,70 @@
             a:hover::after {
                 width: 100%;
             }
+        }
+    }
+} */
+
+.header-nav {
+    position: fixed;
+    z-index: 2;
+    background-color: transparent;
+
+    .hamburger-container {
+        background-color: $white;
+        padding: 0.5rem;
+
+        .hamburger {
+            background-color: transparent;
+            max-height: 3rem;
+            max-width: 3rem;
+            min-height: 3rem;
+            min-width: 3rem;
+    
+            padding: 0.3rem;
+    
+            border: 3px solid $pink;
+            border-radius: 10px;
+    
+            @include flex-column;
+            @include flex-around-center;
+    
+            .hamburger-line::after {
+                content: '';
+                background-color: $pink;
+                position:absolute;
+                top:0;
+                left:-0.85rem;
+    
+                width: 1.8rem;
+                height: 3px;
+    
+                border-radius: 1.5px;
+            }
+    
+        }
+    
+        .hamburger:active {
+            border-color: $gold;
+        }
+    
+        .hamburger:active .hamburger-line::after {
+            background-color: $gold;
+        }
+    }
+
+    
+
+    ul {
+        // display: none;
+        background-color: $white;
+        width: 100vw;
+
+        li a {
+            display: inline-block;
+            width: 100%;
+
+            text-align: center;
         }
     }
 }

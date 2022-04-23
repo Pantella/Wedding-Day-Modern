@@ -23,6 +23,11 @@
     align-items: center;
 }
 
+@mixin flex-around-center {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 
 
 @mixin media-breakpoint-down($brkpnt) {
