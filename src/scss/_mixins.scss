@@ -13,6 +13,11 @@
     flex-flow: column nowrap;
 }
 
+@mixin flex-column-wrap {
+    display: flex;
+    flex-flow: column wrap;
+}
+
 @mixin flex-center {
     justify-content: center;
     align-items: center;
@@ -22,6 +27,12 @@
 
 @mixin media-breakpoint-down($brkpnt) {
     @media screen and (max-width: $brkpnt) {
+        @content;
+    }
+}
+
+@mixin media-breakpoint-up($brkpnt) {
+    @media screen and (min-width: $brkpnt) {
         @content;
     }
 }
