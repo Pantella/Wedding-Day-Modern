@@ -2,7 +2,12 @@
 $font-main: 'Libre Baskerville', serif;
 
 /* FONT SIZES */
+$fnt-sz-sm: 0.9rem;
 $fnt-sz-stnd: 1rem;
+$fnt-sz-stnd-plus: 1.5rem;
+$fnt-sz-md-minus: 2rem;
+$fnt-sz-md: 3rem;
+$fnt-sz-md-plus: 4rem;
 $fnt-sz-big: 7rem;
 
 /* MAIN COLORS */
@@ -14,3 +19,9 @@ $carbon-blue: #212529;
 $grey: #666;
 $white: #fff;
 $black: #000;
+
+/* BREAKPOINTS */
+
+$sm: 575.98px;    // x-small devices (portrait phones, less than 576px)
+$md: 767.98px;    // small devices (landscape phones, less than 768px)
+$lg: 991.98px;    // medium devices (tablets, less than 992px)

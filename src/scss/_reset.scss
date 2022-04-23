@@ -17,6 +17,14 @@
     box-sizing: border-box;
 }
 
+*::selection {
+    background: $gold;
+}
+
+*::-moz-selection {
+    background: $gold;
+}
+
 html, body {
     height: 100%;
 }
@@ -31,7 +39,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 a, button {
-    color: inherit;
+    color: $black;
     text-decoration: none;
 }
 /* RESET END */
