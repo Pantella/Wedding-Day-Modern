@@ -88,6 +88,14 @@
 
             background-image: url('./../images/card-bg.png');
 
+            h2 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+
             @include media-breakpoint-down($lg) {
                 min-width: 100%;
                 max-width: 100%;
@@ -129,7 +137,11 @@
                 left: 0;
                 right: 0;
 
-                font-size: 4rem;
+                font-size: $fnt-sz-md-plus;
+
+                @include media-breakpoint-down($xl) {
+                    font-size: $fnt-sz-md;
+                }
 
                 @include media-breakpoint-down($lg) {
                     @include flex-column;
