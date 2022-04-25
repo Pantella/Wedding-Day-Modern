@@ -10,11 +10,7 @@
             height: 100vh;
         }
     
-        background-color: aquamarine;
-    }
-
-    .panel:nth-child(2n) {
-        background-color: burlywood;
+        background-color: $white;
     }
 
     .landing-panel {
@@ -41,10 +37,6 @@
                 color: $white;
                 font-weight: 200;
                 font-style: italic;
-
-                /* @include media-breakpoint-down($lg) {
-                    color: red;
-                } */
             }
 
             #name-left {
@@ -261,13 +253,16 @@
             }
     
             .gallery-img {
-                width: 30rem;
+                width: 30vw;
+                max-width: 450px;
 
                 @include media-breakpoint-down($lg) {
-                    width: 20rem;
+                    width: 20vw;
+                    min-width: 300px;
                 }
                 @include media-breakpoint-down($md) {
                     max-width: 100%;
+                    width: 100%;
                     min-width: 100%;
                 }
             }
