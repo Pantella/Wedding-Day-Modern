@@ -2,7 +2,8 @@
 @import 'mixins';
 
 .big-title {
-    font-size: $fnt-sz-big;
+    font-size: $fnt-sz-big-plus;
+    // font-family: $font-cursive!important;
 
     @include media-breakpoint-down($md) {
         font-size: $fnt-sz-md;
@@ -10,7 +11,7 @@
 }
 
 .header-cap-letr {
-    color: $dark-purple;
+    color: $pink;
     font-size: 2rem;
     // font-weight: bold;
 }
@@ -25,6 +26,8 @@
     position: absolute;
     top: 15%;
     left: 10%;
+
+    max-width: 40vw;
 }
 
 .desktop-img {
@@ -78,6 +81,13 @@
     top: 10%;
     right: 15%;
 
+    @include media-breakpoint-down($xl) {
+        top: 0%;
+        right: 5%;
+
+        height: 20%;
+    }
+
     @include media-breakpoint-down($lg) {
         z-index: 100;
         top: 0%;
@@ -110,10 +120,16 @@
 .left-leaf {
     height: 100%;
 
-    @include media-breakpoint-down($lg) {
+    @include media-breakpoint-down($xl) {
         height: 45%;
         position: absolute;
         bottom: 0%;
+    }
+
+    @include media-breakpoint-down($lg) {
+        height: 45%;
+        // position: absolute;
+        // bottom: 0%;
     }
 
     @include media-breakpoint-down($sm) {
@@ -123,10 +139,10 @@
 
 .capital-letter {
     color: $pink;
-    font-size: 4rem;
+    font-size: $fnt-sz-md-minus;
 
     @include media-breakpoint-down($sm) {
-        font-size: $fnt-sz-md;
+        font-size: $fnt-sz-stnd-plus;
     }
 }
 
@@ -138,9 +154,13 @@
     font-size: 7rem;
     color: $pink;
 
-    @include media-breakpoint-down($lg) {
-        font-size: 4rem;
+    @include media-breakpoint-down($xl) {
+        font-size: $fnt-sz-md-plus;
     }
+
+    /* @include media-breakpoint-down($lg) {
+        font-size: $fnt-sz-md-plus;
+    } */
 
     @include media-breakpoint-down($sm) {
         font-size: $fnt-sz-md-minus;

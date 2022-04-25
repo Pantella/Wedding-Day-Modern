@@ -10,11 +10,7 @@
             height: 100vh;
         }
     
-        background-color: aquamarine;
-    }
-
-    .panel:nth-child(2n) {
-        background-color: burlywood;
+        background-color: $white;
     }
 
     .landing-panel {
@@ -40,11 +36,7 @@
             span {
                 color: $white;
                 font-weight: 200;
-                font-style: italic;
-
-                /* @include media-breakpoint-down($lg) {
-                    color: red;
-                } */
+                font-family: $font-cursive!important;
             }
 
             #name-left {
@@ -96,6 +88,14 @@
 
             background-image: url('./../images/card-bg.png');
 
+            h2 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+
             @include media-breakpoint-down($lg) {
                 min-width: 100%;
                 max-width: 100%;
@@ -137,7 +137,11 @@
                 left: 0;
                 right: 0;
 
-                font-size: 4rem;
+                font-size: $fnt-sz-md-plus;
+
+                @include media-breakpoint-down($xl) {
+                    font-size: $fnt-sz-md;
+                }
 
                 @include media-breakpoint-down($lg) {
                     @include flex-column;
@@ -261,13 +265,16 @@
             }
     
             .gallery-img {
-                width: 30rem;
+                width: 30vw;
+                max-width: 450px;
 
                 @include media-breakpoint-down($lg) {
-                    width: 20rem;
+                    width: 20vw;
+                    min-width: 300px;
                 }
                 @include media-breakpoint-down($md) {
                     max-width: 100%;
+                    width: 100%;
                     min-width: 100%;
                 }
             }

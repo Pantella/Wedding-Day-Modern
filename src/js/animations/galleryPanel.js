@@ -22,7 +22,7 @@ function animateGallery() {
         }
     });
 
-    if ( windoWidth>=768 ) {
+    if ( windoWidth>768 ) {
         animateImages.from(
             firstImage,
             {

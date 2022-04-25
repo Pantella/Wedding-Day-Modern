@@ -1,5 +1,6 @@
 /* MAIN FONT */
-$font-main: 'Libre Baskerville', serif;
+$font-main: 'Bubbler One', sans-serif;
+$font-cursive: 'Qwitcher Grypen', 'Bubbler One';
 
 /* FONT SIZES */
 $fnt-sz-sm: 0.9rem;
@@ -9,10 +10,12 @@ $fnt-sz-md-minus: 2rem;
 $fnt-sz-md: 3rem;
 $fnt-sz-md-plus: 4rem;
 $fnt-sz-big: 7rem;
+$fnt-sz-big-plus: 9rem;
 
 /* MAIN COLORS */
 
-$pink: #9d7f84;
+// $pink: #9d7f84;
+$pink: #07684b;
 $gold: #b8ab9b;
 $dark-purple: #574e56;
 $carbon-blue: #212529;
@@ -25,3 +28,4 @@ $black: #000;
 $sm: 575.98px;    // x-small devices (portrait phones, less than 576px)
 $md: 767.98px;    // small devices (landscape phones, less than 768px)
 $lg: 991.98px;    // medium devices (tablets, less than 992px)
+$xl: 1199.98px;   // `xl` applies to large devices (desktops, less than 1200px)
