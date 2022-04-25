@@ -2,7 +2,8 @@
 @import 'mixins';
 
 .big-title {
-    font-size: $fnt-sz-big;
+    font-size: $fnt-sz-big-plus;
+    // font-family: $font-cursive!important;
 
     @include media-breakpoint-down($md) {
         font-size: $fnt-sz-md;
@@ -10,7 +11,7 @@
 }
 
 .header-cap-letr {
-    color: $dark-purple;
+    color: $pink;
     font-size: 2rem;
     // font-weight: bold;
 }

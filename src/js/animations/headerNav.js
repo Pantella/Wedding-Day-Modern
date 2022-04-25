@@ -1,9 +1,9 @@
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+// import gsap from "gsap";
+// import ScrollTrigger from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-function changeLinkColor() {
+/* function changeLinkColor() {
 
     let capLetters = document.querySelectorAll('.header-nav a .header-cap-letr');
 
@@ -23,7 +23,7 @@ function changeLinkColor() {
             duration: 1
         }
     );
-}
+} */
 
 function toggleNavbarMobile() {
     let navtoggler = document.querySelector("#navbar-toggler");
@@ -34,4 +34,4 @@ function toggleNavbarMobile() {
     });
 }
 
-export {changeLinkColor,toggleNavbarMobile}
+export {toggleNavbarMobile}
