@@ -13,16 +13,21 @@ function animateGallery() {
 
     const windoWidth = window.innerWidth;
 
-    let animateImages = gsap.timeline({
+    const scrollTrigObj = {
         scrollTrigger: {
             // markers: true,
             trigger: '#galleria',
             start: 'center bottom',
             toggleActions: "play pause restart reverse"
         }
-    });
+    };
+
+    
 
     if ( windoWidth>768 ) {
+
+        let animateImages = gsap.timeline(scrollTrigObj);
+
         animateImages.from(
             firstImage,
             {
@@ -61,6 +66,10 @@ function animateGallery() {
             }
         )
     } else {
+
+        scrollTrigObj.scrollTrigger.start = 'start bottom';
+        let animateImages = gsap.timeline(scrollTrigObj);
+
         animateImages.from(
             phrase,
             {

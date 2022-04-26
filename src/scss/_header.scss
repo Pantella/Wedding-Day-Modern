@@ -58,8 +58,9 @@
     
             padding: 0.3rem;
     
-            border: 3px solid $pink;
-            border-radius: 10px;
+            // border: 3px solid $pink;
+            // border-radius: 10px;
+            border: none;
     
             @include flex-column;
             @include flex-around-center;
@@ -79,9 +80,9 @@
     
         }
     
-        .hamburger:active {
+        /* .hamburger:active {
             border-color: $gold;
-        }
+        } */
     
         .hamburger:active .hamburger-line::after {
             background-color: $gold;
