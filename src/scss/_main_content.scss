@@ -17,14 +17,35 @@
         @include flex-row-wrap;
         @include flex-center;
 
-        background-image: url('./../images/vadim-paripa-medium.jpg');
+        background-image: url('./../images/ba_taranto_lg.jpg');
+        -webkit-background-image: url('./../images/ba_taranto_lg.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: 20%;
         background-attachment: fixed;
 
-        @include media-breakpoint-down($md) {
+        padding-top: 20vh;
+
+        @include media-breakpoint-down($lg) {
+            background-image: url('./../images/ba_taranto_md.jpg');
+            -webkit-background-image: url('./../images/ba_taranto_md.jpg');
+            background-position: 30%;
             height: 100vh;
+
+            padding-top: 20vh;
+        }
+
+        @include media-breakpoint-down($md) {
+            background-image: url('./../images/ba_taranto_md.jpg');
+            -webkit-background-image: url('./../images/ba_taranto_md.jpg');
+            background-position: 20%;
+            height: 100vh;
+        }
+
+        @include media-breakpoint-down($sm) {
+            background-image: url('./../images/ba_taranto_sm.jpg');
+            -webkit-background-image: url('./../images/ba_taranto_sm.jpg');
+            background-position: 50%;
         }
 
         h1 {
@@ -35,7 +56,7 @@
 
             span {
                 color: $white;
-                font-weight: 200;
+                font-weight: bold;
                 font-family: $font-cursive!important;
             }
 
@@ -120,6 +141,7 @@
 
         @include media-breakpoint-down($md) {
             height: 70vh;
+            min-height: 320px;
         }
 
         @include media-breakpoint-down($sm) {

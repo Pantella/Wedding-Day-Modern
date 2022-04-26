@@ -13,92 +13,56 @@ function animateGallery() {
 
     const windoWidth = window.innerWidth;
 
-    let animateImages = gsap.timeline({
+    const scrollTrigObj = {
         scrollTrigger: {
             // markers: true,
             trigger: '#galleria',
             start: 'center bottom',
             toggleActions: "play pause restart reverse"
         }
-    });
+    };
 
-    if ( windoWidth>768 ) {
-        animateImages.from(
-            firstImage,
-            {
-                duration: 0.8,
-                opacity: 0,
-                ease: 'Power1.easeInOut'
-            }
-        ).from(
-            thirdImage,
-            {
-                duration: 0.8,
-                opacity: 0,
-                ease: 'Power1.easeInOut'
-            }
-        ).from(
-            secondImage,
-            {
-                duration: 0.8,
-                opacity: 0,
-                ease: 'Power1.easeInOut'
-            }
-        ).from(
-            fourthImage,
-            {
-                duration: 0.8,
-                opacity: 0,
-                ease: 'Power1.easeInOut'
-            }
-        ).from(
-            phrase,
-            {
-                duration: 0.8,
-                opacity: 0,
-                // scale: 0,
-                ease: 'Power1.easeInOut'
-            }
-        )
-    } else {
-        animateImages.from(
-            phrase,
-            {
-                duration: 0.8,
-                opacity: 0,
-                // scale: 0,
-                ease: 'Power1.easeInOut'
-            }
-        ).from(
-            firstImage,
-            {
-                duration: 0.8,
-                opacity: 0,
-                ease: 'Power1.easeInOut'
-            }
-        ).from(
-            secondImage,
-            {
-                duration: 0.8,
-                opacity: 0,
-                ease: 'Power1.easeInOut'
-            }
-        ).from(
-            thirdImage,
-            {
-                duration: 0.8,
-                opacity: 0,
-                ease: 'Power1.easeInOut'
-            }
-        ).from(
-            fourthImage,
-            {
-                duration: 0.8,
-                opacity: 0,
-                ease: 'Power1.easeInOut'
-            }
-        )
-    }
+    if ( windoWidth<=768 ) scrollTrigObj.scrollTrigger.start = 'start bottom';
+
+    let animateImages = gsap.timeline(scrollTrigObj);
+
+    animateImages.from(
+        phrase,
+        {
+            duration: 0.8,
+            opacity: 0,
+            // scale: 0,
+            ease: 'Power1.easeInOut'
+        }
+    ).from(
+        firstImage,
+        {
+            duration: 0.8,
+            opacity: 0,
+            ease: 'Power1.easeInOut'
+        }
+    ).from(
+        secondImage,
+        {
+            duration: 0.8,
+            opacity: 0,
+            ease: 'Power1.easeInOut'
+        }
+    ).from(
+        thirdImage,
+        {
+            duration: 0.8,
+            opacity: 0,
+            ease: 'Power1.easeInOut'
+        }
+    ).from(
+        fourthImage,
+        {
+            duration: 0.8,
+            opacity: 0,
+            ease: 'Power1.easeInOut'
+        }
+    )
 
 
 }
