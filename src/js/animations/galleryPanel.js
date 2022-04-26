@@ -22,92 +22,47 @@ function animateGallery() {
         }
     };
 
-    
+    if ( windoWidth<=768 ) scrollTrigObj.scrollTrigger.start = 'start bottom';
 
-    if ( windoWidth>768 ) {
+    let animateImages = gsap.timeline(scrollTrigObj);
 
-        let animateImages = gsap.timeline(scrollTrigObj);
-
-        animateImages.from(
-            firstImage,
-            {
-                duration: 0.8,
-                opacity: 0,
-                ease: 'Power1.easeInOut'
-            }
-        ).from(
-            thirdImage,
-            {
-                duration: 0.8,
-                opacity: 0,
-                ease: 'Power1.easeInOut'
-            }
-        ).from(
-            secondImage,
-            {
-                duration: 0.8,
-                opacity: 0,
-                ease: 'Power1.easeInOut'
-            }
-        ).from(
-            fourthImage,
-            {
-                duration: 0.8,
-                opacity: 0,
-                ease: 'Power1.easeInOut'
-            }
-        ).from(
-            phrase,
-            {
-                duration: 0.8,
-                opacity: 0,
-                // scale: 0,
-                ease: 'Power1.easeInOut'
-            }
-        )
-    } else {
-
-        scrollTrigObj.scrollTrigger.start = 'start bottom';
-        let animateImages = gsap.timeline(scrollTrigObj);
-
-        animateImages.from(
-            phrase,
-            {
-                duration: 0.8,
-                opacity: 0,
-                // scale: 0,
-                ease: 'Power1.easeInOut'
-            }
-        ).from(
-            firstImage,
-            {
-                duration: 0.8,
-                opacity: 0,
-                ease: 'Power1.easeInOut'
-            }
-        ).from(
-            secondImage,
-            {
-                duration: 0.8,
-                opacity: 0,
-                ease: 'Power1.easeInOut'
-            }
-        ).from(
-            thirdImage,
-            {
-                duration: 0.8,
-                opacity: 0,
-                ease: 'Power1.easeInOut'
-            }
-        ).from(
-            fourthImage,
-            {
-                duration: 0.8,
-                opacity: 0,
-                ease: 'Power1.easeInOut'
-            }
-        )
-    }
+    animateImages.from(
+        phrase,
+        {
+            duration: 0.8,
+            opacity: 0,
+            // scale: 0,
+            ease: 'Power1.easeInOut'
+        }
+    ).from(
+        firstImage,
+        {
+            duration: 0.8,
+            opacity: 0,
+            ease: 'Power1.easeInOut'
+        }
+    ).from(
+        secondImage,
+        {
+            duration: 0.8,
+            opacity: 0,
+            ease: 'Power1.easeInOut'
+        }
+    ).from(
+        thirdImage,
+        {
+            duration: 0.8,
+            opacity: 0,
+            ease: 'Power1.easeInOut'
+        }
+    ).from(
+        fourthImage,
+        {
+            duration: 0.8,
+            opacity: 0,
+            ease: 'Power1.easeInOut'
+        }
+    )
 
 
 }
