@@ -7,6 +7,7 @@ import animateFirstCard from './animations/rstCardPanel';
 import animateQuote from './animations/quotePanel';
 import animateSecondCard from './animations/sndCardPanel';
 import animateGallery from './animations/galleryPanel';
+import animateListaNozze from './animations/listaNozzePanel';
 
 document.addEventListener('DOMContentLoaded',init);
 
@@ -17,4 +18,5 @@ function init() {
     animateQuote();
     animateSecondCard();
     animateGallery();
+    animateListaNozze();
 }
