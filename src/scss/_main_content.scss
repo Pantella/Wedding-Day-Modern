@@ -371,6 +371,71 @@
         }
     }
 
+    .panel-wedshoots {
+        height: 30vh;
+
+        @include media-breakpoint-down($sm) {
+            height: 50vh;
+        }
+
+        .wedshoots-container {
+            height: 100%;
+
+            @include flex-row;
+            @include flex-center;
+
+            @include media-breakpoint-down($sm) {
+                @include flex-column;
+                @include flex-around-center;
+            }
+
+            .wedshoots-icon {
+                // background-color: aqua;
+                min-width: 30%;
+                max-width: 30%;
+
+                padding: 0 5rem;
+
+                text-align: right;
+
+                @include media-breakpoint-down($sm) {
+                    min-width: 100%;
+                    max-width: 100%;
+
+                    padding: 0 0;
+
+                    text-align: center;
+                }
+            }
+
+            .wedshoots-invite {
+                // background-color: aquamarine;
+                min-width: 70%;
+                max-width: 70%;
+
+                @include media-breakpoint-down($sm) {
+                    min-width: 100%;
+                    max-width: 100%;
+
+                    padding: 0 1rem;
+                }
+
+                p {
+                    padding-right: 1rem;
+
+                    font-size: $fnt-sz-stnd-plus;
+
+                    @include media-breakpoint-down($sm) {
+                        padding-right: 0;
+
+                        font-size: calc($fnt-sz-stnd + 0.2rem);
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
     .lista-panel {
 
         background-color: $white!important;
