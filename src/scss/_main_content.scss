@@ -29,7 +29,7 @@
         @include media-breakpoint-down($lg) {
             background-image: url('./../images/ba_taranto_md.jpg');
             -webkit-background-image: url('./../images/ba_taranto_md.jpg');
-            background-position: 30%;
+            background-position: 70%;
             height: 100vh;
 
             padding-top: 20vh;
@@ -38,14 +38,14 @@
         @include media-breakpoint-down($md) {
             background-image: url('./../images/ba_taranto_md.jpg');
             -webkit-background-image: url('./../images/ba_taranto_md.jpg');
-            background-position: 20%;
+            background-position: 70%;
             height: 100vh;
         }
 
         @include media-breakpoint-down($sm) {
             background-image: url('./../images/ba_taranto_sm.jpg');
             -webkit-background-image: url('./../images/ba_taranto_sm.jpg');
-            background-position: 50%;
+            background-position: 70%;
         }
 
         h1 {
