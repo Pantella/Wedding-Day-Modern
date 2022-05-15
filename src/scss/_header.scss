@@ -114,7 +114,7 @@
             font-size: $fnt-sz-stnd-plus;
 
             @include media-breakpoint-up($lg) {
-                min-width: 30vw;
+                min-width: 25vw;
             }
 
             @include media-breakpoint-down($md) {
@@ -131,6 +131,6 @@
     }
 
     .show-nav {
-        transform: translateY(155%);
+        transform: translateY(118%);
     }
 }
