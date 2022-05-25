@@ -20,7 +20,7 @@
         background-image: url('./../images/ba_taranto_lg.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        -webkit-background-size: cover;
+        // -webkit-background-size: cover;
         background-position: 20%;
         background-attachment: fixed;
 
@@ -513,17 +513,17 @@
                 height: 100%;
 
                 background-image: url('./../images/seychelles_2_large.jpg');
-                -webkit-background-image: url('./../images/seychelles_2_large.jpg');
+                // -webkit-background-image: url('./../images/seychelles_2_large.jpg');
                 background-repeat: no-repeat;
                 background-size: 80%;
-                -webkit-background-size: 80%;
+                // -webkit-background-size: 80%;
                 background-position-y: 40%;
                 background-position-x: 150%;
                 background-attachment: fixed;
 
                 @include media-breakpoint-down($xl) {
                     background-size: 110%;
-                    -webkit-background-size: 110%;
+                    // -webkit-background-size: 110%;
                     background-position-x: -190%;
                     background-position-y: 100%;
                 }
@@ -535,21 +535,21 @@
 
                     background-image: url('./../images/seychelles_3_medium.jpg');
                     background-size: 100%;
-                    -webkit-background-size: 100%;
+                    // -webkit-background-size: 100%;
                     background-position-y: 100%;
                 }
 
                 @include media-breakpoint-down($md) {
                     height: 100vh;
                     background-size: 100%;
-                    -webkit-background-size:100%;
+                    // -webkit-background-size:100%;
                     background-position-y: 60%;
                 }
 
                 @include media-breakpoint-down($sm) {
                     height: 50vh;
                     background-size: 160%;
-                    -webkit-background-size: 160%;
+                    // -webkit-background-size: 160%;
                     background-position-y: 105%;
                     background-position-x: 60%;
                 }
